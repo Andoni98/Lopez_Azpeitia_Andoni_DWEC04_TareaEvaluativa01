@@ -3,8 +3,7 @@ body{
     padding: 0;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     background-image:
-  linear-gradient(to bottom, rgba(0, 195, 255, 0.5), rgba(0, 0, 255, 0.5)),
-  url("/img/mundo.jpg");
+  linear-gradient(to bottom, rgba(0, 195, 255, 0.5), rgba(0, 0, 255, 0.5));
 }
 .fondo img{
     position: absolute;
