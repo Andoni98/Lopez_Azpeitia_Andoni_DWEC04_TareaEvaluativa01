@@ -1,0 +1,107 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-image:
+  linear-gradient(to bottom, rgba(0, 195, 255, 0.5), rgba(0, 0, 255, 0.5)),
+  url("/img/mundo.jpg");
+}
+.fondo img{
+    position: absolute;
+    width: 100%;
+    opacity: 0.6;
+}
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 100px;
+    border-radius: 15px;
+    font-size: 40px;
+    background-color: rgb(79, 180, 226);
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 30px;
+}
+.pais{
+    background: rgb(53, 53, 172);
+    width: 160px;
+    height: 185px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+.pais:hover{
+    transform: scale(1.1)
+}
+.pais h3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding-top: 5px;
+}
+.pais img{
+    padding-top: 15px;
+    width: 140px;
+    height: 110px;
+}
+.box2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box2 h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 600px;
+    height: 100px;
+    border-radius: 15px;
+    font-size: 40px;
+    background-color: rgb(79, 180, 226);
+}
+article h3{
+    color: antiquewhite;
+    text-align: center;
+}
+.imagen{
+    display: flex;
+    justify-content: center;
+}
+.imagen img{
+    width: 320px;
+    height: 213px;
+}
+.container2{
+    display: flex;
+    justify-content: center;
+}
+.noticias{
+    background: rgb(53, 53, 172);
+    width: 400px;
+    height: 50px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+.noticia h2{
+    background-color:  rgb(53, 53, 172);
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    margin-left: 35%;
+    margin-right: 35%;
+}
+.noticia a{
+    display: flex;
+    justify-content: center;
+    color: black;
+}

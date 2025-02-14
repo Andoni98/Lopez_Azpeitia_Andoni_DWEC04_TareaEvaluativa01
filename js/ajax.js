@@ -1,0 +1,208 @@
+'use-strict';
+
+var pais = [];
+
+realizarPeticionPais("deutschland",document.querySelector('#alemania'));
+realizarPeticionPais("afghanistan",document.querySelector('#afganistan'));
+realizarPeticionPais("australia",document.querySelector('#australia'));
+realizarPeticionPais("albania",document.querySelector('#albania'));
+realizarPeticionPais("andorra",document.querySelector('#andorra'));
+realizarPeticionPais("angola",document.querySelector('#angola'));
+realizarPeticionPais("arabia",document.querySelector('#arabia'));
+realizarPeticionPais("algeria",document.querySelector('#argelia'));
+realizarPeticionPais("argentina",document.querySelector('#argentina'));
+realizarPeticionPais("armenia",document.querySelector('#armenia'));
+realizarPeticionPais("austria",document.querySelector('#austria'));
+realizarPeticionPais("azerbaijan",document.querySelector('#azerbaiyan'));
+realizarPeticionPais("bahamas",document.querySelector('#bahamas'));
+realizarPeticionPais("bangladesh",document.querySelector('#banglades'));
+realizarPeticionPais("barbados",document.querySelector('#barbados'));
+realizarPeticionPais("bahrain",document.querySelector('#barein'));
+realizarPeticionPais("belgium",document.querySelector('#belgica'));
+realizarPeticionPais("belize",document.querySelector('#belice'));
+realizarPeticionPais("benin",document.querySelector('#benin'));
+realizarPeticionPais("belarus",document.querySelector('#bielorrusia'));
+realizarPeticionPais("myanmar",document.querySelector('#myanmar'));
+realizarPeticionPais("bolivia",document.querySelector('#bolivia'));
+realizarPeticionPais("bosnia",document.querySelector('#bosnia'));
+realizarPeticionPais("botswana",document.querySelector('#botsuana'));
+realizarPeticionPais("brazil",document.querySelector('#brasil'));
+realizarPeticionPais("brunei",document.querySelector('#brunei'));
+realizarPeticionPais("bulgaria",document.querySelector('#bulgaria'));
+realizarPeticionPais("burkina",document.querySelector('#burkina'));
+realizarPeticionPais("burundi",document.querySelector('#burundi'));
+realizarPeticionPais("bhutan",document.querySelector('#butan'));
+realizarPeticionPais("cabo",document.querySelector('#caboverde'));
+realizarPeticionPais("cambodia",document.querySelector('#camboya'));
+realizarPeticionPais("cameroon",document.querySelector('#camerun'));
+realizarPeticionPais("canada",document.querySelector('#canada'));
+realizarPeticionPais("qatar",document.querySelector('#catar'));
+realizarPeticionPais("chad",document.querySelector('#chad'));
+realizarPeticionPais("czech",document.querySelector('#checa'));
+realizarPeticionPais("chile",document.querySelector('#chile'));
+realizarPeticionPais("china",document.querySelector('#china'));
+realizarPeticionPais("cyprus",document.querySelector('#chipre'));
+realizarPeticionPais("colombia",document.querySelector('#colombia'));
+realizarPeticionPais("comoros",document.querySelector('#comoras'));
+realizarPeticionPais("congo",document.querySelector('#congo'));
+realizarPeticionPais("korea",document.querySelector('#corea'));
+realizarPeticionPais("ivory",document.querySelector('#costademarfil'));
+realizarPeticionPais("costa",document.querySelector('#costarica'));
+realizarPeticionPais("croatia",document.querySelector('#croacia'));
+realizarPeticionPais("cuba",document.querySelector('#cuba'));
+realizarPeticionPais("denmark",document.querySelector('#dinamarca'));
+realizarPeticionPais("dominican",document.querySelector('#republicadominicana'));
+realizarPeticionPais("ecuador",document.querySelector('#ecuador'));
+realizarPeticionPais("salvador",document.querySelector('#salvador'));
+realizarPeticionPais("egypt",document.querySelector('#egipto'));
+realizarPeticionPais("eritrea",document.querySelector('#eritrea'));
+realizarPeticionPais("slovakia",document.querySelector('#eslovaquia'));
+realizarPeticionPais("slovenia",document.querySelector('#eslovenia'));
+realizarPeticionPais("spain",document.querySelector('#espania'));
+realizarPeticionPais("emirates",document.querySelector('#emiratos'));
+realizarPeticionPais("usa",document.querySelector('#estadosunidos'));
+realizarPeticionPais("estonia",document.querySelector('#estonia'));
+realizarPeticionPais("ethiopia",document.querySelector('#etiopia'));
+realizarPeticionPais("philippines",document.querySelector('#filipinas'));
+realizarPeticionPais("finland",document.querySelector('#finlandia'));
+realizarPeticionPais("fiji",document.querySelector('#fiyi'));
+realizarPeticionPais("france",document.querySelector('#francia'));
+realizarPeticionPais("gabon",document.querySelector('#gabon'));
+realizarPeticionPais("gambia",document.querySelector('#gambia'));
+realizarPeticionPais("georgia",document.querySelector('#georgia'));
+realizarPeticionPais("ghana",document.querySelector('#ghana'));
+realizarPeticionPais("greece",document.querySelector('#grecia'));
+realizarPeticionPais("guatemala",document.querySelector('#guatemala'));
+realizarPeticionPais("guinea",document.querySelector('#guineabisau'));
+realizarPeticionPais("equatorial",document.querySelector('#guineaecuatorial'));
+realizarPeticionPais("guyana",document.querySelector('#guyana'));
+realizarPeticionPais("haiti",document.querySelector('#haiti'));
+realizarPeticionPais("honduras",document.querySelector('#honduras'));
+realizarPeticionPais("hungary",document.querySelector('#hungria'));
+realizarPeticionPais("india",document.querySelector('#india'));
+realizarPeticionPais("indonesia",document.querySelector('#indonesia'));
+realizarPeticionPais("iraq",document.querySelector('#irak'));
+realizarPeticionPais("iran",document.querySelector('#iran'));
+realizarPeticionPais("ireland",document.querySelector('#irlanda'));
+realizarPeticionPais("iceland",document.querySelector('#islandia'));
+realizarPeticionPais("israel",document.querySelector('#israel'));
+realizarPeticionPais("italy",document.querySelector('#italia'));
+realizarPeticionPais("jamaica",document.querySelector('#jamaica'));
+realizarPeticionPais("japan",document.querySelector('#japon'));
+realizarPeticionPais("jordan",document.querySelector('#jordania'));
+realizarPeticionPais("kazakhstan",document.querySelector('#kazajistan'));
+realizarPeticionPais("kenya",document.querySelector('#kenia'));
+realizarPeticionPais("kyrgyzstan",document.querySelector('#kirguistan'));
+realizarPeticionPais("kiribati",document.querySelector('#kiribati'));
+realizarPeticionPais("kuwait",document.querySelector('#kuwait'));
+realizarPeticionPais("laos",document.querySelector('#laos'));
+realizarPeticionPais("lesotho",document.querySelector('#lesoto'));
+realizarPeticionPais("lebanon",document.querySelector('#libano'));
+realizarPeticionPais("latvia",document.querySelector('#letonia'));
+realizarPeticionPais("liberia",document.querySelector('#liberia'));
+realizarPeticionPais("libya",document.querySelector('#libia'));
+realizarPeticionPais("liechtenstein",document.querySelector('#lichestein'));
+realizarPeticionPais("lithuania",document.querySelector('#lituania'));
+realizarPeticionPais("luxembourg",document.querySelector('#luxemburgo'));
+realizarPeticionPais("macedonia",document.querySelector('#macedonia'));
+realizarPeticionPais("madagascar",document.querySelector('#madagascar'));
+realizarPeticionPais("malaysia",document.querySelector('#malasia'));
+realizarPeticionPais("malawi",document.querySelector('#malaui'));
+realizarPeticionPais("maldives",document.querySelector('#maldivas'));
+realizarPeticionPais("mali",document.querySelector('#mali'));
+realizarPeticionPais("malta",document.querySelector('#malta'));
+realizarPeticionPais("morocco",document.querySelector('#marruecos'));
+realizarPeticionPais("marshall",document.querySelector('#marshall'));
+realizarPeticionPais("mauritius",document.querySelector('#mauricio'));
+realizarPeticionPais("mauritania",document.querySelector('#mauritania'));
+realizarPeticionPais("mexico",document.querySelector('#mexico'));
+realizarPeticionPais("monaco",document.querySelector('#monaco'));
+realizarPeticionPais("mongolia",document.querySelector('#mongolia'));
+realizarPeticionPais("montenegro",document.querySelector('#montenegro'));
+realizarPeticionPais("mozambique",document.querySelector('#mozambique'));
+realizarPeticionPais("namibia",document.querySelector('#namibia'));
+realizarPeticionPais("nauru",document.querySelector('#nauru'));
+realizarPeticionPais("nepal",document.querySelector('#nepal'));
+realizarPeticionPais("nicaragua",document.querySelector('#nicaragua'));
+realizarPeticionPais("niger",document.querySelector('#niger'));
+realizarPeticionPais("nigeria",document.querySelector('#nigeria'));
+realizarPeticionPais("norway",document.querySelector('#noruega'));
+realizarPeticionPais("zealand",document.querySelector('#nuevazelanda'));
+realizarPeticionPais("oman",document.querySelector('#oman'));
+realizarPeticionPais("netherlands",document.querySelector('#holanda'));
+realizarPeticionPais("pakistan",document.querySelector('#pakistan'));
+realizarPeticionPais("palestine",document.querySelector('#palestina'));
+realizarPeticionPais("panama",document.querySelector('#panama'));
+realizarPeticionPais("papua",document.querySelector('#nuevaguinea'));
+realizarPeticionPais("paraguay",document.querySelector('#paraguay'));
+realizarPeticionPais("peru",document.querySelector('#peru'));
+realizarPeticionPais("poland",document.querySelector('#polonia'));
+realizarPeticionPais("portugal",document.querySelector('#portugal'));
+realizarPeticionPais("rwanda",document.querySelector('#ruanda'));
+realizarPeticionPais("romania",document.querySelector('#rumania'));
+realizarPeticionPais("russia",document.querySelector('#rusia'));
+realizarPeticionPais("solomon",document.querySelector('#salomon'));
+realizarPeticionPais("samoa",document.querySelector('#samoa'));
+realizarPeticionPais("botswana",document.querySelector('#botswana'));
+realizarPeticionPais("saint",document.querySelector('#cristobalnieves'));
+realizarPeticionPais("senegal",document.querySelector('#senegal'));
+realizarPeticionPais("serbia",document.querySelector('#serbia'));
+realizarPeticionPais("seychelles",document.querySelector('#seychelles'));
+realizarPeticionPais("singapore",document.querySelector('#singapur'));
+realizarPeticionPais("syria",document.querySelector('#siria'));
+realizarPeticionPais("somalia",document.querySelector('#somalia'));
+realizarPeticionPais("sri",document.querySelector('#srilanka'));
+realizarPeticionPais("sudan",document.querySelector('#sudan'));
+realizarPeticionPais("sweden",document.querySelector('#suecia'));
+realizarPeticionPais("switzerland",document.querySelector('#suiza'));
+realizarPeticionPais("suriname",document.querySelector('#surinam'));
+realizarPeticionPais("thailand",document.querySelector('#tailandia'));
+realizarPeticionPais("tanzania",document.querySelector('#tanzania'));
+realizarPeticionPais("tajikistan",document.querySelector('#tayikistan'));
+realizarPeticionPais("timor",document.querySelector('#timor'));
+realizarPeticionPais("togo",document.querySelector('#togo'));
+realizarPeticionPais("tonga",document.querySelector('#tonga'));
+realizarPeticionPais("tunisia",document.querySelector('#tunez'));
+realizarPeticionPais("turkmenistan",document.querySelector('#turkmenistan'));
+realizarPeticionPais("tobago",document.querySelector('#trinidad'));
+realizarPeticionPais("turkey",document.querySelector('#turquia'));
+realizarPeticionPais("ukraine",document.querySelector('#ucrania'));
+realizarPeticionPais("uganda",document.querySelector('#uganda'));
+realizarPeticionPais("uruguay",document.querySelector('#uruguay'));
+realizarPeticionPais("uzbekistan",document.querySelector('#uzbekistan'));
+realizarPeticionPais("vanuatu",document.querySelector('#vanuatu'));
+realizarPeticionPais("vatican",document.querySelector('#vaticano'));
+realizarPeticionPais("venezuela",document.querySelector('#venezuela'));
+realizarPeticionPais("vietnam",document.querySelector('#vietnam'));
+realizarPeticionPais("yemen",document.querySelector('#yemen'));
+realizarPeticionPais("djibouti",document.querySelector('#yibuti'));
+realizarPeticionPais("zambia",document.querySelector('#zambia'));
+realizarPeticionPais("zimbabwe",document.querySelector('#zimbabue'));
+
+function realizarPeticionPais(nombre,div){
+    fetch('https://restcountries.com/v3.1/name/'+nombre)
+    .then (data => data.json())
+    .then(data =>{
+        pais = data;
+        pintarPais(pais,div);
+    })
+}
+
+function pintarPais(pais,div){
+    let nombre = document.createElement('h3');
+    nombre.innerHTML = pais[0].name.common;
+    div.appendChild(nombre);
+    let bandera = document.createElement('img');
+    bandera.src = pais[0].flags.png;
+    div.appendChild(bandera);
+}
+
+function paises(nombrePais){
+    //Guardar LocalStorage
+    localStorage.setItem("nombre", nombrePais);
+    window.location.href="pais.html";
+} 
+
+function noticias(){
+    window.location.href="noticias.html";
+} 

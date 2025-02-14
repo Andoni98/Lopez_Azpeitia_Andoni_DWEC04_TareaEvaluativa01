@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+
+
+<html lang="es">
+
+
+    <head>
+        <meta charset="utf-8">
+
+
+        <title>Países</title>
+
+
+        <link rel="stylesheet" href="/models/css/style.css">
+
+
+    </head>
+
+
+    <body>
+       
+        <div class="box"><h1>Países</h1></div>
+       
+        <!--Peticiones AJAX-->
+        <div class="container">
+
+            <button class="pais" id="alemania" onclick="paises('deutschland')"></button>
+            
+            <button class="pais" id="afganistan" onclick="paises('afghanistan')"></button>
+
+
+            <button class="pais" id="albania" onclick="paises('albania')"></button>
+
+
+            <button class="pais" id="angola" onclick="paises('angola')"></button>
+
+
+            <button class="pais" id="arabia" onclick="paises('arabia')"></button>
+
+
+            <button class="pais" id="argelia" onclick="paises('algeria')"></button>
+
+
+            <button class="pais" id="argentina" onclick="paises('argentina')"></button>
+
+
+            <button class="pais" id="armenia" onclick="paises('armenia')"></button>
+
+
+            <button class="pais" id="australia" onclick="paises('australia')"></button>
+
+
+            <button class="pais" id="austria" onclick="paises('austria')"></button>
+
+
+            <button class="pais" id="azerbaiyan" onclick="paises('azerbaijan')"></button>
+
+
+            <button class="pais" id="andorra" onclick="paises('andorra')"></button>
+
+
+            <button class="pais" id="bahamas" onclick="paises('bahamas')"></button>
+
+
+            <button class="pais" id="banglades" onclick="paises('bangladesh')"></button>
+
+
+            <button class="pais" id="barbados" onclick="paises('barbados')"></button>
+
+
+            <button class="pais" id="barein" onclick="paises('bahrain')"></button>
+
+
+            <button class="pais" id="belgica" onclick="paises('belgium')"></button>
+
+
+            <button class="pais" id="belice" onclick="paises('belize')"></button>
+
+
+            <button class="pais" id="benin" onclick="paises('benin')"></button>
+
+
+            <button class="pais" id="bielorrusia" onclick="paises('belarus')"></button>
+
+
+            <button class="pais" id="myanmar" onclick="paises('myanmar')"></button>
+
+
+            <button class="pais" id="bolivia" onclick="paises('bolivia')"></button>
+
+
+            <button class="pais" id="bosnia" onclick="paises('bosnia')"></button>
+
+
+            <button class="pais" id="botsuana" onclick="paises('botswana')"></button>
+
+
+            <button class="pais" id="brasil" onclick="paises('brazil')"></button>
+
+
+            <button class="pais" id="brunei" onclick="paises('brunei')"></button>
+
+
+            <button class="pais" id="bulgaria" onclick="paises('bulgaria')"></button>
+
+
+            <button class="pais" id="burkina" onclick="paises('burkina')"></button>
+
+
+            <button class="pais" id="burundi" onclick="paises('burundi')"></button>
+
+
+            <button class="pais" id="butan" onclick="paises('bhutan')"></button>
+
+
+            <button class="pais" id="caboverde" onclick="paises('cabo')"></button>
+
+
+            <button class="pais" id="camboya" onclick="paises('cambodia')"></button>
+
+
+            <button class="pais" id="camerun" onclick="paises('cameroon')"></button>
+
+
+            <button class="pais" id="canada" onclick="paises('canada')"></button>
+
+
+            <button class="pais" id="catar" onclick="paises('qatar')"></button>
+
+
+            <button class="pais" id="chad" onclick="paises('chad')"></button>
+
+
+            <button class="pais" id="checa" onclick="paises('czech')"></button>
+
+
+            <button class="pais" id="chile" onclick="paises('chile')"></button>
+
+
+            <button class="pais" id="china" onclick="paises('china')"></button>
+
+
+            <button class="pais" id="chipre" onclick="paises('cyprus')"></button>
+
+
+            <button class="pais" id="colombia" onclick="paises('colombia')"></button>
+
+
+            <button class="pais" id="comoras" onclick="paises('comoros')"></button>
+
+
+            <button class="pais" id="congo" onclick="paises('congo')"></button>
+
+
+            <button class="pais" id="corea" onclick="paises('korea')"></button>
+
+
+            <button class="pais" id="costademarfil" onclick="paises('ivory')"></button>
+
+
+            <button class="pais" id="costarica" onclick="paises('costa')"></button>
+
+
+            <button class="pais" id="croacia" onclick="paises('croatia')"></button>
+
+
+            <button class="pais" id="cuba" onclick="paises('cuba')"></button>
+
+
+            <button class="pais" id="dinamarca" onclick="paises('denmark')"></button>
+
+
+            <button class="pais" id="republicadominicana" onclick="paises('dominican')"></button>
+
+
+            <button class="pais" id="ecuador" onclick="paises('ecuador')"></button>
+
+
+            <button class="pais" id="salvador" onclick="paises('salvador')"></button>
+
+
+            <button class="pais" id="egipto" onclick="paises('egypt')"></button>
+
+
+            <button class="pais" id="eritrea" onclick="paises('eritrea')"></button>
+
+
+            <button class="pais" id="eslovaquia" onclick="paises('slovakia')"></button>
+
+
+            <button class="pais" id="eslovenia" onclick="paises('slovenia')"></button>
+
+
+            <button class="pais" id="espania" onclick="paises('spain')"></button>
+
+
+            <button class="pais" id="emiratos" onclick="paises('emirates')"></button>
+
+
+            <button class="pais" id="estadosunidos" onclick="paises('usa')"></button>
+
+
+            <button class="pais" id="estonia" onclick="paises('estonia')"></button>
+
+
+            <button class="pais" id="etiopia" onclick="paises('ethiopia')"></button>
+
+
+            <button class="pais" id="filipinas" onclick="paises('philippines')"></button>
+
+
+            <button class="pais" id="finlandia" onclick="paises('finland')"></button>
+
+
+            <button class="pais" id="fiyi" onclick="paises('fiji')"></button>
+
+
+            <button class="pais" id="francia" onclick="paises('france')"></button>
+
+
+            <button class="pais" id="gabon" onclick="paises('gabon')"></button>
+
+
+            <button class="pais" id="gambia" onclick="paises('gambia')"></button>
+
+
+            <button class="pais" id="georgia" onclick="paises('georgia')"></button>
+
+
+            <button class="pais" id="ghana" onclick="paises('ghana')"></button>
+
+
+            <button class="pais" id="grecia" onclick="paises('greece')"></button>
+
+
+            <button class="pais" id="guatemala" onclick="paises('guatemala')"></button>
+
+
+            <button class="pais" id="guineabisau" onclick="paises('guinea')"></button>
+
+
+            <button class="pais" id="guineaecuatorial" onclick="paises('equatorial')"></button>
+
+
+            <button class="pais" id="guyana" onclick="paises('guyana')"></button>
+
+
+            <button class="pais" id="haiti" onclick="paises('haiti')"></button>
+
+
+            <button class="pais" id="honduras" onclick="paises('honduras')"></button>
+
+
+            <button class="pais" id="hungria" onclick="paises('hungary')"></button>
+
+
+            <button class="pais" id="india" onclick="paises('india')"></button>
+
+
+            <button class="pais" id="indonesia" onclick="paises('indonesia')"></button>
+
+
+            <button class="pais" id="irak" onclick="paises('iraq')"></button>
+
+
+            <button class="pais" id="iran" onclick="paises('iran')"></button>
+
+
+            <button class="pais" id="irlanda" onclick="paises('ireland')"></button>
+
+
+            <button class="pais" id="islandia" onclick="paises('iceland')"></button>
+
+
+            <button class="pais" id="israel" onclick="paises('israel')"></button>
+
+
+            <button class="pais" id="italia" onclick="paises('italy')"></button>
+
+
+            <button class="pais" id="jamaica" onclick="paises('jamaica')"></button>
+
+
+            <button class="pais" id="japon" onclick="paises('japan')"></button>
+
+
+            <button class="pais" id="jordania" onclick="paises('jordan')"></button>
+
+
+            <button class="pais" id="kazajistan" onclick="paises('kazakhstan')"></button>
+
+
+            <button class="pais" id="kenia" onclick="paises('kenya')"></button>
+
+
+            <button class="pais" id="kirguistan" onclick="paises('kyrgyzstan')"></button>
+
+
+            <button class="pais" id="kiribati" onclick="paises('kiribati')"></button>
+
+
+            <button class="pais" id="kuwait" onclick="paises('kuwait')"></button>
+
+
+            <button class="pais" id="laos" onclick="paises('laos')"></button>
+
+
+            <button class="pais" id="lesoto" onclick="paises('lesotho')"></button>
+
+
+            <button class="pais" id="libano" onclick="paises('lebanon')"></button>
+
+
+            <button class="pais" id="letonia" onclick="paises('latvia')"></button>
+
+
+            <button class="pais" id="liberia" onclick="paises('liberia')"></button>
+
+
+            <button class="pais" id="libia" onclick="paises('libya')"></button>
+
+
+            <button class="pais" id="lichestein" onclick="paises('liechtenstein')"></button>
+
+
+            <button class="pais" id="lituania" onclick="paises('lithuania')"></button>
+
+
+            <button class="pais" id="luxemburgo" onclick="paises('luxembourg')"></button>
+
+
+            <button class="pais" id="macedonia" onclick="paises('macedonia')"></button>
+
+
+            <button class="pais" id="madagascar" onclick="paises('madagascar')"></button>
+
+
+            <button class="pais" id="malasia" onclick="paises('malaysia')"></button>
+
+
+            <button class="pais" id="malaui" onclick="paises('malawi')"></button>
+
+
+            <button class="pais" id="maldivas" onclick="paises('maldives')"></button>
+
+
+            <button class="pais" id="mali" onclick="paises('mali')"></button>
+
+
+            <button class="pais" id="malta" onclick="paises('malta')"></button>
+
+
+            <button class="pais" id="marruecos" onclick="paises('morocco')"></button>
+
+
+            <button class="pais" id="marshall" onclick="paises('marshall')"></button>
+
+
+            <button class="pais" id="mauricio" onclick="paises('mauritius')"></button>
+
+
+            <button class="pais" id="mauritania" onclick="paises('mauritania')"></button>
+
+
+            <button class="pais" id="mexico" onclick="paises('mexico')"></button>
+
+
+            <button class="pais" id="monaco" onclick="paises('monaco')"></button>
+
+
+            <button class="pais" id="mongolia" onclick="paises('mongolia')"></button>
+
+
+            <button class="pais" id="montenegro" onclick="paises('montenegro')"></button>
+
+
+            <button class="pais" id="mozambique" onclick="paises('mozambique')"></button>
+
+
+            <button class="pais" id="namibia" onclick="paises('namibia')"></button>
+
+
+            <button class="pais" id="nauru" onclick="paises('nauru')"></button>
+
+
+            <button class="pais" id="nepal" onclick="paises('nepal')"></button>
+
+
+            <button class="pais" id="nicaragua" onclick="paises('nicaragua')"></button>
+
+
+            <button class="pais" id="niger" onclick="paises('niger')"></button>
+
+
+            <button class="pais" id="nigeria" onclick="paises('nigeria')"></button>
+
+
+            <button class="pais" id="noruega" onclick="paises('norway')"></button>
+
+
+            <button class="pais" id="nuevazelanda" onclick="paises('zealand')"></button>
+
+
+            <button class="pais" id="oman" onclick="paises('oman')"></button>
+
+
+            <button class="pais" id="holanda" onclick="paises('netherlands')"></button>
+
+
+            <button class="pais" id="pakistan" onclick="paises('pakistan')"></button>
+
+
+            <button class="pais" id="palestina" onclick="paises('palestine')"></button>
+
+
+            <button class="pais" id="panama" onclick="paises('panama')"></button>
+
+
+            <button class="pais" id="nuevaguinea" onclick="paises('papua')"></button>
+
+
+            <button class="pais" id="paraguay" onclick="paises('paraguay')"></button>
+
+
+            <button class="pais" id="peru" onclick="paises('peru')"></button>
+
+
+            <button class="pais" id="polonia" onclick="paises('poland')"></button>
+
+
+            <button class="pais" id="portugal" onclick="paises('portugal')"></button>
+
+
+            <button class="pais" id="ruanda" onclick="paises('rwanda')"></button>
+
+
+            <button class="pais" id="rumania" onclick="paises('romania')"></button>
+
+
+            <button class="pais" id="rusia" onclick="paises('russia')"></button>
+
+
+            <button class="pais" id="salomon" onclick="paises('solomon')"></button>
+
+
+            <button class="pais" id="samoa" onclick="paises('samoa')"></button>
+
+
+            <button class="pais" id="botswana" onclick="paises('botswana')"></button>
+
+
+            <button class="pais" id="cristobalnieves" onclick="paises('saint')"></button>
+
+
+            <button class="pais" id="senegal" onclick="paises('senegal')"></button>
+
+
+            <button class="pais" id="serbia" onclick="paises('serbia')"></button>
+
+
+            <button class="pais" id="seychelles" onclick="paises('seychelles')"></button>
+
+
+            <button class="pais" id="singapur" onclick="paises('singapore')"></button>
+
+
+            <button class="pais" id="siria" onclick="paises('syria')"></button>
+
+
+            <button class="pais" id="somalia" onclick="paises('somalia')"></button>
+
+
+            <button class="pais" id="srilanka" onclick="paises('sri')"></button>
+
+
+            <button class="pais" id="sudan" onclick="paises('sudan')"></button>
+
+
+            <button class="pais" id="suecia" onclick="paises('sweden')"></button>
+
+
+            <button class="pais" id="suiza" onclick="paises('switzerland')"></button>
+
+
+            <button class="pais" id="surinam" onclick="paises('suriname')"></button>
+
+
+            <button class="pais" id="tailandia" onclick="paises('thailand')"></button>
+
+
+            <button class="pais" id="tanzania" onclick="paises('tanzania')"></button>
+
+
+            <button class="pais" id="tayikistan" onclick="paises('tajikistan')"></button>
+
+
+            <button class="pais" id="timor" onclick="paises('timor')"></button>
+
+
+            <button class="pais" id="togo" onclick="paises('togo')"></button>
+
+
+            <button class="pais" id="tonga" onclick="paises('tonga')"></button>
+
+
+            <button class="pais" id="tunez" onclick="paises('tunisia')"></button>
+
+
+            <button class="pais" id="turkmenistan" onclick="paises('turkmenistan')"></button>
+
+
+            <button class="pais" id="trinidad" onclick="paises('tobago')"></button>
+
+
+            <button class="pais" id="turquia" onclick="paises('turkey')"></button>
+
+
+            <button class="pais" id="ucrania" onclick="paises('ukraine')"></button>
+
+
+            <button class="pais" id="uganda" onclick="paises('uganda')"></button>
+
+
+            <button class="pais" id="uruguay" onclick="paises('uruguay')"></button>
+
+
+            <button class="pais" id="uzbekistan" onclick="paises('uzbekistan')"></button>
+
+
+            <button class="pais" id="vanuatu" onclick="paises('vanuatu')"></button>
+
+
+            <button class="pais" id="vaticano" onclick="paises('vatican')"></button>
+
+
+            <button class="pais" id="venezuela" onclick="paises('venezuela')"></button>
+
+
+            <button class="pais" id="vietnam" onclick="paises('vietnam')"></button>
+
+
+            <button class="pais" id="yemen" onclick="paises('yemen')"></button>
+
+
+            <button class="pais" id="yibuti" onclick="paises('djibouti')"></button>
+
+
+            <button class="pais" id="zambia" onclick="paises('zambia')"></button>
+
+
+            <button class="pais" id="zimbabue" onclick="paises('zimbabwe')"></button>
+
+
+        </div>
+
+        <div class="container2">
+
+            <button class="noticias" onclick="noticias()"><h3>Noticias</h3></button>
+
+        </div>
+        <script type="text/javascript" src="js/ajax.js"></script>
+
+
+    </body>
+</html>
