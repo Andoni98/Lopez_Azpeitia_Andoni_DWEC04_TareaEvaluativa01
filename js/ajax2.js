@@ -25,3 +25,7 @@ function pintarNoticia(noticia){
     divNoticia.appendChild(urlNoticia);
     });
 }
+
+function inicio(){
+    window.location.href="index.html";
+} 

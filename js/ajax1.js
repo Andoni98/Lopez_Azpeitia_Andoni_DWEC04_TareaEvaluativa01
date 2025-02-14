@@ -36,3 +36,7 @@ function pintarCarcateristicasPais(pais){
     let population = document.querySelector('#population');
     population.innerHTML = "Population: "+pais[0].population;
 }
+
+function inicio(){
+    window.location.href="index.html";
+} 
